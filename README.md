@@ -4,9 +4,15 @@ I know it's not the more rigorous way to make speedtest and some specifics tools
 
 ## A SparkNotebook showing my experiments is available in this repo if you want to try by yourself.
 
+## A sbt project with same code is also available
+You can run it once inside sbt with `run numberIterations s1,s2,s3` where numberIterations, s1, s2, s3 are Int representing number of run of the test and s1, s2, s3 are vector sizes.
+
 ## Process
 
 I took two version of `sqdist`, imparativ and functional ones. For input vector size i run 60% of warming up `sqdist` and measure time on the left 40% for different number of iterations from 100k to 10M. At each iterations 2 random DenseVector are generated. Code spoke better by himself i think.
+
+### Improving
+Things like computation of the mean and standard deviations should be done !
 
 ## Beginning of possible explanations
 
